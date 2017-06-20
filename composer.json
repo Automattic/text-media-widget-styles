@@ -1,0 +1,7 @@
+{
+  "name": "automattic/text-media-widget-fixes",
+  "version": "v1.0.0",
+  "autoload": {
+  	"files": [ "text-media-widget-styles.php" ]
+  }
+}
