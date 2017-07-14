@@ -30,7 +30,10 @@ add_filter( 'widget_media_audio_instance', 'wpcom_media_audio_styles' );
 
 /* Image Widget */
 function wpcom_media_image_styles( $instance ) {
-	echo '<style>.widget.widget_media_image img { height: auto; max-width: 100%; } </style>';
+	echo '<style>';
+	echo '.widget.widget_media_image { overflow: hidden; }';
+	echo '.widget.widget_media_image img { height: auto; max-width: 100%; }';
+	echo '</style>';
 	return $instance;
 }
 add_filter( 'widget_media_image_instance', 'wpcom_media_image_styles' );
